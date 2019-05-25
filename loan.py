@@ -26,8 +26,8 @@ import matplotlib.pyplot as plt
 from nltk.stem import WordNetLemmatizer
 documents=[]
 stemmer=WordNetLemmatizer()
-train_data=pd.read_csv("./train.csv")
-test_data=pd.read_csv("./test.csv")
+train_data=pd.read_csv("/content/LoanTest/train.csv")
+test_data=pd.read_csv("/content/LoanTest/test.csv")
 print(train_data.describe())
 sns.barplot(x=train_data["PAN_flag"],y=train_data["VoterID_flag"])
 print(train_data.head())

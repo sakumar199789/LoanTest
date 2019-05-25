@@ -1,1 +1,1 @@
-worker: python loantest.py
+web: python loantest.py
